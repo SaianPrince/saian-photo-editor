@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+package-lock.json
+opencv/
+
+# Build output
+dist/
+*.obj
+
+# Temp files
+backend/bin/temp_preview.jpg
+backend/build/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

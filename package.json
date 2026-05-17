@@ -1,0 +1,42 @@
+{
+  "name": "saian-photo-editor",
+  "version": "1.0.0",
+  "description": "A high-performance C++ OpenCV image editor themed with a striking Red Chinese Dragon.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.saian.photoeditor",
+    "productName": "Saian Photo Editor",
+    "asar": true,
+    "asarUnpack": [
+      "backend/bin/**"
+    ],
+    "files": [
+      "main.js",
+      "index.html",
+      "style.css",
+      "renderer.js",
+      "backend/bin/engine.exe",
+      "backend/bin/opencv_world*.dll",
+      "dragon.png"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "dragon.png",
+      "requestedExecutionLevel": "asInvoker",
+      "artifactName": "${productName}_Setup_${version}.${ext}"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
