@@ -1,6 +1,7 @@
 const { ipcRenderer } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const os = require('os');
 
 // DOM Elements
 const btnImport = document.getElementById('btn-import');
@@ -142,11 +143,7 @@ function loadImage(filePath) {
   originalPath = filePath;
   fileNameSpan.textContent = path.basename(filePath);
   
-  const tempDir = path.join(__dirname, 'backend', 'bin');
-  if (!fs.existsSync(tempDir)) {
-    fs.mkdirSync(tempDir, { recursive: true });
-  }
-  tempPreviewPath = path.join(tempDir, 'temp_preview.jpg');
+  tempPreviewPath = path.join(os.tmpdir(), 'saian_temp_preview.jpg');
   
   dropZone.classList.add('hidden');
   imageViewer.classList.remove('hidden');

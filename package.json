@@ -35,6 +35,14 @@
       "requestedExecutionLevel": "asInvoker",
       "artifactName": "${productName}_Setup_${version}.${ext}"
     },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Saian Photo Editor",
+      "installerHeaderIcon": "dragon.png"
+    },
     "directories": {
       "output": "dist"
     }
