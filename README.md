@@ -39,6 +39,10 @@
   <img src="screenshots/editing.png" alt="Editing" width="800"/>
 </p>
 
+<p align="center">
+  <img src="screenshots/color.png" alt="Main Screen" width="800"/>
+</p>
+
 > 💡 *Add your own screenshots to the `screenshots/` folder*
 
 ## 🚀 Quick Start (Pre-built)
