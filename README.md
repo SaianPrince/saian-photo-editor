@@ -35,15 +35,22 @@
   <img src="screenshots/main.png" alt="Main Screen" width="800"/>
 </p>
 
+
 <p align="center">
-  <img src="screenshots/editing.png" alt="Editing" width="800"/>
+  <img src="screenshots/filter.png" alt="Editing" width="800"/>
 </p>
+
+
+<p align="center">
+  <img src="screenshots/editing.png" alt="Main Screen" width="800"/>
+</p>
+
 
 <p align="center">
   <img src="screenshots/color.png" alt="Main Screen" width="800"/>
 </p>
 
-> 💡 *Add your own screenshots to the `screenshots/` folder*
+
 
 ## 🚀 Quick Start (Pre-built)
 
@@ -59,27 +66,6 @@
 - **Visual Studio 2022/2026** with C++ Desktop Development workload
 - **OpenCV 4.9** — Pre-built Windows binaries ([Download](https://opencv.org/releases/))
 
-### Steps
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/saian-photo-editor.git
-cd saian-photo-editor
-
-# 2. Install dependencies
-npm install
-
-# 3. Build the C++ engine
-cd backend
-python build.py
-cd ..
-
-# 4. Run in development mode
-npm start
-
-# 5. Build installer (.exe setup)
-npm run dist
-```
 
 ## 🏗️ Architecture
 
