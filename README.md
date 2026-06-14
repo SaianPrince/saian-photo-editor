@@ -37,11 +37,6 @@
 
 
 <p align="center">
-  <img src="screenshots/filter.png" alt="Editing" width="800"/>
-</p>
-
-
-<p align="center">
   <img src="screenshots/editing.png" alt="Main Screen" width="800"/>
 </p>
 
